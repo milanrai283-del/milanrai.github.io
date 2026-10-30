@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milan Rai | Education</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#f4f7fb;
+ color:#243047;
+ line-height:1.6;
+}
+header{
+ background:#123b65;
+ color:white;
+ text-align:center;
+ padding:35px 15px;
+}
+header h1{margin:0;font-size:30px}
+nav{
+ background:#092b4c;
+ padding:12px;
+ text-align:center;
+}
+nav a{
+ color:white;
+ text-decoration:none;
+ margin:8px;
+ display:inline-block;
+}
+.container{
+ max-width:1000px;
+ margin:auto;
+ padding:20px;
+}
+.card{
+ background:white;
+ padding:22px;
+ margin:18px 0;
+ border-radius:12px;
+ box-shadow:0 3px 12px #00000010;
+}
+h2{color:#14558a}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+ gap:12px;
+}
+.item{
+ background:#eaf3fc;
+ padding:15px;
+ text-align:center;
+ border-radius:9px;
+}
+button{
+ padding:9px 16px;
+ border:0;
+ border-radius:6px;
+ background:#e5a82c;
+ cursor:pointer;
+ font-weight:bold;
+}
+select{padding:8px;border-radius:6px}
+footer{
+ background:#123b65;
+ color:white;
+ text-align:center;
+ padding:20px;
+ margin-top:30px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Milan Rai Education</h1>
+<p>Learning Today, Leading Tomorrow</p>
+<p>शिक्षा, ज्ञान र सिर्जनशीलताको साझा मञ्च</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#classes">Classes</a>
+<a href="#notes">Notes</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<section class="card" id="home">
+<h2 id="welcome">मेरो शैक्षिक वेबसाइटमा स्वागत छ!</h2>
+<p id="intro">यो वेबसाइट विद्यार्थीहरूको सिकाइ, अभ्यास र ज्ञान अभिवृद्धिका लागि तयार गरिएको हो। यहाँ विभिन्न कक्षाका पाठ्यसामग्री, नोट्स र प्रश्नोत्तरहरू उपलब्ध गराइनेछ।</p>
+
+<select onchange="changeLanguage(this.value)">
+<option value="ne">नेपाली</option>
+<option value="en">English</option>
+</select>
+</section>
+
+<section class="card" id="about">
+<h2>About Me | मेरो परिचय</h2>
+<p><b>Name:</b> Milan Rai</p>
+<p><b>Profession:</b> Teacher</p>
+<p><b>School:</b> Shree Panchakanya Secondary School</p>
+<p><b>Address:</b> Halesi Tuwachung Municipality-11, Khotang, Nepal</p>
+<p>म विद्यार्थीहरूलाई सरल, व्यावहारिक र रमाइलो तरिकाले सिकाउन प्रतिबद्ध शिक्षक हुँ।</p>
+</section>
+
+<section class="card" id="classes">
+<h2>Classes | कक्षाहरू</h2>
+<div class="grid">
+<div class="item">Class 1</div>
+<div class="item">Class 2</div>
+<div class="item">Class 3</div>
+<div class="item">Class 4</div>
+<div class="item">Class 5</div>
+<div class="item">Class 6</div>
+<div class="item">Class 7</div>
+<div class="item">Class 8</div>
+<div class="item">Class 9</div>
+<div class="item">Class 10</div>
+</div>
+</section>
+
+<section class="card" id="notes">
+<h2>Study Materials | अध्ययन सामग्री</h2>
+<ul>
+<li>Subject-wise Notes</li>
+<li>Questions and Answers</li>
+<li>Practice Questions</li>
+<li>Model Questions</li>
+<li>PDF and Learning Resources</li>
+</ul>
+<p>नयाँ अध्ययन सामग्रीहरू क्रमशः थपिँदै जानेछन्।</p>
+</section>
+
+<section class="card" id="contact">
+<h2>Contact | सम्पर्क</h2>
+<p>Teacher: Milan Rai</p>
+<p>Location: Khotang, Nepal</p>
+<p>Email: आफ्नो इमेल ठेगाना पछि यहाँ राख्नुहोस्।</p>
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Milan Rai Education</p>
+<p>Knowledge is Power | ज्ञान नै शक्ति हो</p>
+</footer>
+
+<script>
+function changeLanguage(lang){
+ if(lang==="en"){
+ document.getElementById("welcome").innerText="Welcome to My Educational Website!";
+ document.getElementById("intro").innerText="This website is designed to support students' learning, practice and knowledge. Study materials, notes and questions will be available here.";
+ }else{
+ document.getElementById("welcome").innerText="मेरो शैक्षिक वेबसाइटमा स्वागत छ!";
+ document.getElementById("intro").innerText="यो वेबसाइट विद्यार्थीहरूको सिकाइ, अभ्यास र ज्ञान अभिवृद्धिका लागि तयार गरिएको हो। यहाँ विभिन्न कक्षाका पाठ्यसामग्री, नोट्स र प्रश्नोत्तरहरू उपलब्ध गराइनेछ।";
+ }
+}
+</script>
+
+</body>
+</html>
